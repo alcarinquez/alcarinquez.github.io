@@ -1,0 +1,473 @@
+/* Saudi-China Opensource Exchange 2025 - Main Stylesheet */
+
+:root {
+  /* Color Palette */
+  --saudi-green: #1A4731;
+  --chinese-red: #C62D2D;
+  --tech-blue: #0066CC;
+  --white: #FFFFFF;
+  --light-gray: #f8f9fa;
+  --dark-gray: #343a40;
+}
+
+/* General Styles */
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-title h2 {
+  color: var(--saudi-green) !important;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.section-title h2:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: var(--chinese-red);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--saudi-green);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  color: var(--white) !important;
+  height: 40px;
+}
+
+.navbar .nav-link {
+  color: var(--white) !important;
+  font-weight: 400;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: var(--tech-blue) ;
+}
+
+.navbar .register-btn {
+  background-color: var(--chinese-red);
+  color: var(--white);
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.navbar .register-btn:hover {
+  background-color: #a52222;
+  color: var(--white);
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-slider .carousel-item {
+  height: 100vh;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-slider .carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  text-align: center;
+  color: var(--white);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.countdown-box {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 10px;
+  min-width: 80px;
+}
+
+.countdown-box span {
+  display: block;
+}
+
+.countdown-number {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.countdown-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+/* About Section */
+#about {
+  background-color: var(--light-gray);
+}
+
+/* Key Value Propositions */
+.value-prop-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.value-prop-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.value-prop-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-prop-card h3 {
+  color: var(--saudi-green);
+  margin-bottom: 15px;
+}
+
+.value-prop-icon {
+  font-size: 2.5rem;
+  color: var(--tech-blue);
+  margin-bottom: 20px;
+}
+
+/* Speakers Section */
+.speaker-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+
+.speaker-card:hover {
+  transform: translateY(-5px);
+}
+
+.speaker-image {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.speaker-info {
+  padding: 20px;
+}
+
+.speaker-info h4 {
+  color: var(--saudi-green);
+  margin-bottom: 5px;
+}
+
+.speaker-info p {
+  color: var(--dark-gray);
+  margin-bottom: 10px;
+}
+
+.speaker-social a {
+  color: var(--tech-blue);
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.speaker-filter {
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  background-color: var(--white);
+  color: var(--dark-gray);
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  margin: 0 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background-color: var(--tech-blue);
+  color: var(--white);
+  border-color: var(--tech-blue);
+}
+
+/* Schedule Section */
+.schedule-day {
+  margin-bottom: 40px;
+}
+
+.schedule-day h3 {
+  color: var(--saudi-green);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--chinese-red);
+}
+
+.schedule-item {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.schedule-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-time {
+  background-color: var(--tech-blue);
+  color: var(--white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.schedule-title {
+  color: var(--saudi-green);
+  margin: 0;
+}
+
+.schedule-content {
+  margin-top: 15px;
+  display: none;
+}
+
+.schedule-item.active .schedule-content {
+  display: block;
+}
+
+/* Registration Section */
+#registration {
+  background-color: var(--light-gray);
+}
+
+.registration-form {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  background-color: var(--chinese-red);
+  color: var(--white);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #a52222;
+}
+
+/* Contact Section */
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info i {
+  color: var(--tech-blue);
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Social Media Sharing */
+.social-share {
+  margin-top: 30px;
+}
+
+.social-share a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--tech-blue);
+  color: var(--white);
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.social-share a:hover {
+  background-color: var(--saudi-green);
+}
+
+/* Footer */
+footer {
+  background-color: var(--saudi-green);
+  color: var(--white);
+  padding: 50px 0 20px;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-links h4 {
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-links h4:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--chinese-red);
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.copyright {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .countdown-box {
+    min-width: 60px;
+    padding: 10px;
+  }
+  
+  .countdown-number {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 60px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  .countdown-container {
+    flex-wrap: wrap;
+  }
+  
+  .countdown-box {
+    margin-bottom: 10px;
+  }
+}

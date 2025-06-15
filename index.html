@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沙中开源峰会 2025</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet"> 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="fw-bold">沙中开源峰会 2025 <small>| 利雅得</small></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#english">English</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">关于</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#value-props">峰会价值</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#speakers">嘉宾致辞</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">会议日程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#media">媒体</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">联系我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sponsor-us">成为赞助伙伴！</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link register-btn" href="#registration">立即注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide hero-slider" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('images/hero-riyadh.jpg');">
+                </div>
+                <div class="carousel-item" style="background-image: url('images/hero-garage.webp');">
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <h1>沙特阿拉伯-中国·开源峰会<br>2025</h1>
+            <p>2025年11月11日 | 沙特阿拉伯, 利雅得</p>
+            <p>百余家中沙两国科技公司，与开源爱好者们齐聚沙特阿拉伯，分享开源故事，共创商业机遇</p>
+            <p>距离盛会开始：</p>
+            
+            <div id="countdown-container" class="countdown-container">
+                <div class="countdown-box">
+                    <span id="countdown-days" class="countdown-number">0</span>
+                    <span class="countdown-label">天</span>
+                </div>
+                <div class="countdown-box">
+                    <span id="countdown-hours" class="countdown-number">0</span>
+                    <span class="countdown-label">时</span>
+                </div>
+                <div class="countdown-box">
+                    <span id="countdown-minutes" class="countdown-number">0</span>
+                    <span class="countdown-label">分</span>
+                </div>
+                <div class="countdown-box">
+                    <span id="countdown-seconds" class="countdown-number">0</span>
+                    <span class="countdown-label">秒</span>
+                </div>
+            </div>
+            
+            <a href="#registration" class="btn btn-lg" style="background-color: var(--chinese-red); color: var(--white);">立即注册</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>峰会背景</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p style="font-weight: bold; font-size: 24px">"中国信息技术实现了世界级转型，沙特渴望复制成功故事。"</p>
+                    <p>——— 沙特通信大臣阿卜杜拉 · 斯瓦哈，《南华早报》</p>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 mx-auto text-center">
+                    <p class="lead"> 2022年12月8日，中沙两国元首签署《中华人民共和国和沙特阿拉伯王国全面战略伙伴关系协议》。
+                        此后每两年两国轮流举行元首会晤，两国政府同时签署了《中华人民共和国政府和沙特阿拉伯王国政府关于共建“一带一路”倡议与“2030愿景”对接实施方案》，中方愿同沙方提升包括数字经济等领域的全面合作。
+                        人工智能和开源技术生态的建设成为全球数字经济发展的核心引擎。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Value Propositions -->
+    <section id="value-props">
+        <div class="container">
+            <div class="section-title">
+                <h2>峰会价值</h2>
+            </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="value-prop-card">
+                            <div class="value-prop-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>AI产业&市场前沿</h3>
+                            <p>最新的AI技术和开源产业应用实践</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="value-prop-card">
+                            <div class="value-prop-icon">
+                                <i class="fas fa-anchor"></i>
+                            </div>
+                            <h3>开源出海</h3>
+                            <p>开源，中国科技企业出海的绝佳策略</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="value-prop-card">
+                            <div class="value-prop-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3>政策支持</h3>
+                            <p>沙特产业政策和中国科技优势，探索“数字一带一路”的国际模式</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="value-prop-card">
+                            <div class="value-prop-icon">
+                                <i class="fas fa-globe-asia"></i>
+                            </div>
+                            <h3>生态扩展</h3>
+                            <p>人工智能和开源领域的最新学术探讨及国际交流</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="value-prop-card">
+                            <div class="value-prop-icon">
+                                <i class="fas fa-globe-asia"></i>
+                            </div>
+                            <h3>业务合作</h3>
+                            <p>建立中沙在AI和开源领域产业合作，推动数字科技的产业合作与互补</p>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers">
+        <div class="container">
+            <div class="section-title">
+                <h2>嘉宾致辞</h2>
+            </div>
+            
+            <!-- <div class="row mb-4">
+                <div class="col-md-6 mx-auto">
+                    <div class="input-group">
+                        <input type="text" id="speaker-search" class="form-control" placeholder="Search speakers...">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="speaker-filter text-center">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="china">China</button>
+                <button class="filter-btn" data-filter="saudi">Saudi Arabia</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+                <button class="filter-btn" data-filter="os">OS</button>
+                <button class="filter-btn" data-filter="database">Database</button>
+            </div> -->
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="speaker-card china ai">
+                        <div class="speaker-image" style="background-image: url('images/hero-2.jpg');"></div>
+                        <div class="speaker-info">
+                            <h4>谭中意</h4>
+                            <p class="speaker-title">开源战略及人工智能领域资深专家</p>
+                            <p>20+年开源工作和近10年人工智能、云原生工作经验</br>
+                                熟悉国内国际开源组织管理和开源社区运营</br>
+                                中国开源推进联盟常务副秘书长</br>
+                                Apache 软件基金会成员</br>
+                                LF AI & Data Generative AI Commons发起人
+                            </p>
+                            <div class="speaker-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="speaker-card saudi">
+                        <div class="speaker-image" style="background-image: url('https://via.placeholder.com/300x300?text=Dean+Zhou');"></div>
+                        <div class="speaker-info">
+                            <h4>Raed Alkhuraiji</h4>
+                            <p class="speaker-title">沙特市场专家</p>
+                            <p>经验丰富的开源软件专家</br>
+                                具有高等教育和技术行业的工作经验</br>
+                                熟练掌握PHP、数据库、Drupal、Java和.NET框架</br>
+                                强大的信息技术专业背景
+                            </p>
+                            <div class="speaker-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="speaker-card saudi">
+                        <div class="speaker-image" style="background-image: url('images/hero-1.jpg');"></div>
+                        <div class="speaker-info">
+                            <h4>AbdulAziz AlOraij</h4>
+                            <p class="speaker-title">沙特程序员协会主席</p>
+                            <p>丰富的服务沙特政府及相关行业经验</br>
+                                熟悉沙特本地软件市场</br>
+                                有广泛的沙特科技企业网络
+                            </p>
+                            <div class="speaker-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="speaker-card china cloud">
+                        <div class="speaker-image" style="background-image: url('https://via.placeholder.com/300x300?text=Dean+Zhou');"></div>
+                        <div class="speaker-info">
+                            <h4>狄安</h4>
+                            <p class="speaker-title">OpenTEKr</p>
+                            <p>软件行业连续创业者，拥有近二十年企业级软件市场的商业化运作实践</br>
+                                丰富的国际化合作经验</br>
+                                熟悉各类开源项目和社区</br>
+                                精通开源战略和开源的商业化</br>
+                            </p>
+                            <div class="speaker-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="text-center mt-4">
+                <h3>Participating Companies</h3>
+                <div class="row mt-4">
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="company-logo">Huawei</div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="company-logo">Alibaba</div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="company-logo">Tencent</div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="company-logo">Inspur</div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="company-logo">ByteDance</div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="company-logo">Baidu</div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="company-logo">ZTE</div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="company-logo">Ant Group</div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="company-logo">Xiao Mi</div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="company-logo">PingCap</div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="company-logo">Oceanbase</div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2 mb-4">
+                        <div class="company-logo">SenseTime</div>
+                    </div>
+                </div>
+                <p class="mt-3">...and many more</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>会议日程</h2>
+            </div>
+            
+            <div class="schedule-day">
+                <h3>Day 1</h3>
+                
+                <div class="schedule-item">
+                    <div class="schedule-item-header">
+                        <h4 class="schedule-title">致辞与演讲</h4>
+                        <span class="schedule-time">9:00 AM - 12:00 PM</span>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Opening remarks and keynote presentations from industry leaders and government officials.</p>
+                        <p><strong>Details coming soon</strong></p>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-item-header">
+                        <h4 class="schedule-title">午餐交流会</h4>
+                        <span class="schedule-time">12:00 PM - 1:30 PM</span>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Connect with speakers, participants, and industry leaders over lunch.</p>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-item-header">
+                        <h4 class="schedule-title">企业专题沙龙与项目路演</h4>
+                        <span class="schedule-time">1:30 PM - 5:00 PM</span>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Hands-on workshops and technical presentations on various open source technologies.</p>
+                        <p><strong>Details coming soon</strong></p>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-item-header">
+                        <h4 class="schedule-title">晚宴交流会</h4>
+                        <span class="schedule-time">5:00 PM - 7:00 PM</span>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Evening reception with refreshments and opportunities for further networking.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="schedule-day">
+                <h3>Day 2 交流走访沙特相关企业与机构</h3>
+                
+                <div class="schedule-item">
+                    <div class="schedule-item-header">
+                        <h4 class="schedule-title">操作系统相关</h4>
+                        <span class="schedule-time">9:00 AM - 10:30 AM</span>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Discussions on projects like DeepIn (Tongxin).</p>
+                        <p><strong>Participant Highlight:</strong> Ren Zidong (Tongxin) - DeepIn OS, the largest open source desktop OS community in Asia.</p>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-item-header">
+                        <h4 class="schedule-title">人工智能相关</h4>
+                        <span class="schedule-time">10:45 AM - 12:15 PM</span>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Exploring AI applications and open source projects like Semantic Kernel.</p>
+                        <p><strong>Participant Highlights:</strong></p>
+                        <ul>
+                            <li>Zhou Wenjun (Ai4C Research Institute) - Practical application of AI and Metaverse technologies, LLM Starter Kit based on Semantic Kernel and Dapr.</li>
+                            <li>Zhang Yaqi (ChaosAI) - Research in Artificial intelligence and Cybersecurity, hacker culture, nurturing talent.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-item-header">
+                        <h4 class="schedule-title">午餐交流会</h4>
+                        <span class="schedule-time">12:15 PM - 1:30 PM</span>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Connect with speakers, participants, and industry leaders over lunch.</p>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-item-header">
+                        <h4 class="schedule-title">数据库相关</h4>
+                        <span class="schedule-time">1:30 PM - 3:00 PM</span>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Covering relational databases like GreatSQL and analytical databases like Apache Doris.</p>
+                        <p><strong>Participant Highlights:</strong></p>
+                        <ul>
+                            <li>Ren Du (Great OpenSource) - GreatSQL, a MySQL fork for financial-grade applications.</li>
+                            <li>Yi Guolei (SelectDB) - Apache Doris, a high-performance, real-time analytical database.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-item-header">
+                        <h4 class="schedule-title">云计算&云原生相关</h4>
+                        <span class="schedule-time">3:15 PM - 4:45 PM</span>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Focus on cloud native ecosystem and CNCF projects.</p>
+                        <p><strong>Participant Highlight:</strong> Zhang Hongbin (DaoCloud) - Global technical leader in cloud native, CNCF gold member, active in Kubernetes and other CNCF projects.</p>
+                    </div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-item-header">
+                        <h4 class="schedule-title">工业软件与低码平台相关</h4>
+                        <span class="schedule-time">5:00 PM - 6:30 PM</span>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Discussing ERP/LowCode solutions like inbuild/UBML.</p>
+                        <p><strong>Participant Highlight:</strong> Zheng Weibo (Inspur Digital) - UBML, an open-source low-code project, and Inspur Smart ERP.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="schedule-day">
+                <h3>Throughout the Day</h3>
+                
+                <div class="schedule-item">
+                    <div class="schedule-item-header">
+                        <h4 class="schedule-title">Networking & Bilateral Meetings</h4>
+                        <span class="schedule-time">All Day</span>
+                    </div>
+                    <div class="schedule-content">
+                        <p>Opportunities for attendees from Saudi Arabia and China to connect, discuss future cooperation, investment, innovation, and business development.</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <!-- <section id="media">
+        <div class="container">
+            <div class="section-title">
+                <h2>Media & Updates</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead">Stay informed about the latest news and announcements regarding the 2025 Saudi-China Open Source Exchange.</p>
+                    <p><em>News articles and updates will be posted here as they become available. Please check back regularly.</em></p>
+                </div>
+            </div>
+            
+            <div class="social-share text-center mt-5">
+                <p>Share this event:</p>
+                <a href="#" data-type="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" data-type="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" data-type="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" data-type="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Registration Section -->
+    <section id="registration" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>注册参会</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="registration-form">
+                        <p class="text-center mb-4">Secure your spot at the 2025 Saudi-China Open Source Exchange.</p>
+                        <p class="text-center mb-4"><em>Registration will open soon. Sign up to be notified when registration begins.</em></p>
+                        
+                        <form id="notify-form">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email Address" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="organization" placeholder="Organization">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="submit-btn">Notify Me</button>
+                            </div>
+                        </form>
+                        
+                        <div id="form-response" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Information</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead">Organized by:</p>
+                    <h4>Programmers Association "parmg"</h4>
+                    <p><a href="https://parmg.sa/" target="_blank">https://parmg.sa/</a></p>
+                    
+                    <div class="contact-info mt-4">
+                        <p><i class="fas fa-envelope"></i> info@oss-saudi.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="sponsor-us" class="bg-light">
+    <div class="container">
+        <div class="section-title">
+        <h2>成为我们的赞助伙伴！</h2>
+        </div>
+        <div class="row">
+        <div class="col-lg-6 mx-auto">
+            <div class="registration-form">
+            <p class="text-center mb-4">邮件联系OPENTEKR助理</p>
+            <form action="mailto:maxwell.zhou@opentekr.com?subject=Event%20Inquiry" method="POST" enctype="text/plain">
+                <div class="mb-3">
+                <input type="text" class="form-control" name="name" placeholder="姓名" required>
+                </div>
+                <div class="mb-3">
+                <input type="email" class="form-control" name="from" placeholder="您的邮件地址" required>
+                </div>
+                <div class="mb-3">
+                <textarea class="form-control" name="message" placeholder="讯息" rows="5" required></textarea>
+                </div>
+                <div class="text-center">
+                <button type="submit" class="submit-btn">发送</button>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="footer-logo">
+                        <span class="text-white fw-bold fs-4">OSS-SAUDI</span>
+                        <p class="mt-3">Saudi-China Opensource Exchange 2025</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#speakers">Speakers</a></li>
+                            <li><a href="#schedule">Agenda</a></li>
+                            <li><a href="#registration">Registration</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="footer-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-share">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Saudi-China Opensource Exchange. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
