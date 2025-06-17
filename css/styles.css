@@ -207,6 +207,11 @@ section {
 }
 
 /* Speakers Section */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .speaker-card {
   background-color: var(--white);
   border-radius: 10px;
