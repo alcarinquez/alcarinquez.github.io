@@ -396,6 +396,10 @@ section {
   letter-spacing: 2px;
 }
 
+.sponsor-table tbody tr:nth-child(even) {
+  background-color: #d9dadb; /* slightly darker than --light-gray */
+}
+
 
 /* Registration Section */
 #registration {
