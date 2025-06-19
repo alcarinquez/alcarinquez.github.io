@@ -323,6 +323,41 @@ section {
   display: block;
 }
 
+/* Enterprise Section */
+.enterprise-card {
+  border: 2px solid var(--saudi-green);
+  border-radius: 18px;
+  background: var(--white);
+  box-shadow: 0 4px 16px rgba(26,71,49,0.06);
+  padding: 40px 24px 32px 24px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.enterprise-card:hover {
+  box-shadow: 0 8px 24px rgba(26,71,49,0.12);
+}
+
+.enterprise-title {
+  color: var(--saudi-green);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.enterprise-title-china{
+  color: var(--chinese-red);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+
 /* Registration Section */
 #registration {
   background-color: var(--light-gray);
