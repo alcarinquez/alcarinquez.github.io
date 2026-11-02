@@ -1,21 +1,27 @@
 ---
+import { Font } from 'astro:assets';
 import '../styles/global.css';
 
 interface Props {
 	title?: string;
+	/** Page language: 'en', 'zh-Hant' or 'ja'. Mark mixed-language passages with their own `lang`. */
+	lang?: string;
 }
 
-const { title = 'Astro' } = Astro.props;
+const { title = 'Somarello Speaks', lang = 'en' } = Astro.props;
 ---
 
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" sizes="32x32" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<Font cssVariable="--font-noto-serif-tc" />
+		<Font cssVariable="--font-noto-serif-jp" />
+		<Font cssVariable="--font-crimson-pro" />
 	</head>
 	<body>
 		<slot />
