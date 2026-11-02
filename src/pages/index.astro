@@ -1,16 +1,55 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import donkeyOutline from '../../materials/svg/donkey2-outline.svg?raw';
+
+// Path data comes straight from the exported outline, so re-exporting the SVG updates the page.
+const d = donkeyOutline.match(/ d="([^"]+)"/)?.[1] ?? '';
+
+// Tiling, in the outline's own units (its viewBox is 375 x 285).
+const step = { x: 345, y: 276 }; // nose touches the next tail; a small gap between rows
+const rowOffset = 172; // every other row shifts by half a donkey
+const scale = 0.5; // ~190px wide on screen
+const strokePx = 2.2;
+
+const colors = ['stroke-green-500', 'stroke-blue-500', 'stroke-red-500', 'stroke-orange-500'];
+const rows = [
+	[0, 1, 2, 3],
+	[2, 3, 0, 1], // shifted row: no two neighbours share a colour
+];
+
+// One pattern tile is 4 donkeys x 2 rows. Extra copies one tile up/left fill in
+// the parts of donkeys that cross the tile's edges.
+const tile = { w: rows[0].length * step.x, h: rows.length * step.y };
+const donkeys = rows.flatMap((order, r) =>
+	order.flatMap((colorIndex, c) =>
+		[-tile.w, 0].flatMap((dx) =>
+			[-tile.h, 0].map((dy) => ({
+				x: dx + c * step.x + (r % 2 ? rowOffset : 0),
+				y: dy + r * step.y,
+				color: colors[colorIndex],
+			})),
+		),
+	),
+);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+	<svg class="fixed inset-0 h-full w-full" aria-hidden="true">
+		<defs>
+			<path
+				id="donkey"
+				d={d}
+				fill="none"
+				stroke-width={strokePx / scale}
+				stroke-linejoin="round"
+				stroke-linecap="round"
+			/>
+			<pattern id="herd" patternUnits="userSpaceOnUse" width={tile.w * scale} height={tile.h * scale}>
+				<g transform={`scale(${scale})`}>
+					{donkeys.map(({ x, y, color }) => <use href="#donkey" x={x} y={y} class={color} />)}
+				</g>
+			</pattern>
+		</defs>
+		<rect width="100%" height="100%" fill="url(#herd)"></rect>
+	</svg>
+</Layout>
