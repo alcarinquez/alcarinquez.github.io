@@ -1,11 +1,15 @@
 @import "tailwindcss";
 
 /* Self-hosted Crimson Pro + Noto Serif TC / JP (see `fonts` in astro.config.mjs).
-   Crimson Pro sets the Latin text; it has no CJK, so Chinese and Japanese characters
-   fall through to Noto Serif. English and Traditional Chinese use TC first; Japanese
-   uses JP first, because the two draw many shared kanji/hanzi differently (e.g. 直, 骨, 角). */
+   The Noto Serif faces only cover CJK code points, so they go first: Chinese and Japanese
+   characters use them, everything else falls through to Crimson Pro. They must come before
+   `--font-crimson-pro`, which ends in a generic `serif` (needed for Astro's metric-matched
+   fallback) — anything after that generic is never reached, and the browser would draw CJK
+   with a system font such as Songti TC instead.
+   English and Traditional Chinese use TC first; Japanese uses JP first, because the two draw
+   many shared kanji/hanzi differently (e.g. 直, 骨, 角). */
 @theme {
-	--font-serif: var(--font-crimson-pro), var(--font-noto-serif-tc), var(--font-noto-serif-jp), serif;
+	--font-serif: var(--font-noto-serif-tc), var(--font-noto-serif-jp), var(--font-crimson-pro);
 	/* The whole site defaults to the serif stack. */
 	--default-font-family: var(--font-serif);
 
@@ -14,5 +18,5 @@
 }
 
 :lang(ja) {
-	font-family: var(--font-crimson-pro), var(--font-noto-serif-jp), var(--font-noto-serif-tc), serif;
+	font-family: var(--font-noto-serif-jp), var(--font-noto-serif-tc), var(--font-crimson-pro);
 }
